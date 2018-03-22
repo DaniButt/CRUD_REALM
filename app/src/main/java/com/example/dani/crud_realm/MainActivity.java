@@ -84,16 +84,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void execute(Realm realm) {
               //  persontodelete.deleteAllFromRealm();
-            try {
+
                 persontodelete.deleteFirstFromRealm();
                 persontodelete.deleteLastFromRealm();
-                Toast.makeText(MainActivity.this,"Deleted, Please Press View",Toast.LENGTH_SHORT).show();
 
 
-            }catch (Exception e){
-                Toast.makeText(MainActivity.this,"Not Found",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Deleted",Toast.LENGTH_SHORT).show();
 
-            }
 
             }
         });
